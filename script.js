@@ -3,11 +3,11 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function generatePassword() {
-    alert("A strong password must should a combination of uppercase letters, lowercase letters, numbers, and special characters and be at least 8 characters long but no more than 128.");
-    var length = parseInt(prompt("Enter password length from 8 to 128 characters"));
+    alert("A strong password should contain a combination of uppercase letters, lowercase letters, numbers, and special characters and be at least 8 characters long but no more than 128.");
+    var length = prompt("Enter password length from 8 to 128 characters");
 
     if (length < 8 || length > 128) {
-        alert("Invalid length");
+        alert("Invalid input");
         return;
     }
 
@@ -28,13 +28,14 @@ function generatePassword() {
     var special = "!@#$%^&*()_-+=<>?";
 
     var allChars = lowercase + uppercase + numeric + special
+    var generatedPassword = "";
 
-for (var i = 0; i 
+for (var i = 0; i < length; i++) {
+    var randomIndex = Math.floor(Math.random() * allChars.length);
+    generatedPassword += allChars[randomIndex];
+}
 
-
-
-
-
+return generatedPassword;
 
 }
 
