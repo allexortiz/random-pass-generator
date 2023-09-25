@@ -37,3 +37,6 @@ See images below of each prompt and a random password being generated
 ![sixth-prompt](./images/image-5.png)
 ![random-password](./images/image-6.png)
 
+## Links
+Github repository: https://github.com/allexortiz/random-pass-generator
+Random Password Generator site: https://allexortiz.github.io/random-pass-generator/
